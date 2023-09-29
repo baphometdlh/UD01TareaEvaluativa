@@ -12,14 +12,14 @@ public class Ejercicio1 {
 	//atributos
 	static Object[] arrayLetras;
  
-	public static void main(String[] args) {
-		System.out.println("Primero leemos el fichero y contiene el siguiente texto: ");
-		leerFichero();
-		System.out.println("despues de invertir el contenido, tenemos el siguiente texto: ");
+	public static void main(String[] args) {		
+		leerFichero();		
 		escribirFichero();
 	}
 	
 	private static void leerFichero() {
+		
+		System.out.println("Primero leemos el fichero y contiene el siguiente texto: ");
 		
 		try {
 			File fichero = new File("." + File.separator + "src" + File.separator + 
@@ -55,6 +55,9 @@ public class Ejercicio1 {
 	}
 	
 	public static void escribirFichero() {
+		
+		System.out.println("despues de invertir el contenido, tenemos el siguiente texto: ");
+		
 		try {
 			File fichero = new File("." + File.separator + "src" + File.separator + 
 					"ejercicios" + File.separator + "fichero.txt");
@@ -76,6 +79,4 @@ public class Ejercicio1 {
 	}
 	
 	
-	
-
 }
