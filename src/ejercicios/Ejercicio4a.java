@@ -15,7 +15,7 @@ datos deberá informar al usuario de que la carga se ha realizado satisfactoriam
 public class Ejercicio4a {
 
 	public static void main(String[] args) throws IOException {
-		final int longitudRegistro = 169;
+		final int longitudRegistro = 110;
 		File fichero = new File("." + File.separator + "src" + File.separator + 
 				"ejercicios" + File.separator + "Marvel.dat");
 		if(fichero.exists()) {
