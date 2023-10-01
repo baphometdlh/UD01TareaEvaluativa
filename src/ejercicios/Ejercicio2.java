@@ -17,6 +17,7 @@ public class Ejercicio2 {
 		escribirFichero(leerFichero());
 	}
 	
+	//método para leer un fichero y devuelve un arraylist de Strings.
 	private static ArrayList<String> leerFichero() {
 		
 		ArrayList<String> listaPalabras = new ArrayList<>();
@@ -31,7 +32,7 @@ public class Ejercicio2 {
 			String linea;
 			String palabra;
 			
-			System.out.println("Las palabras palíndromas en el fichero son: ");
+			System.out.println("Las palabras palindromas en el fichero son: ");
 			
 			while ((linea = bfr.readLine()) != null) {
 				leerPalabra = new Scanner(linea);
@@ -46,9 +47,7 @@ public class Ejercicio2 {
 				}
 
 			}
-			bfr.close();
-			
-			
+			bfr.close();		
 			
 		}catch(Exception ex) {
 			System.out.println("algo no va bien: " + ex.getMessage());
@@ -58,6 +57,7 @@ public class Ejercicio2 {
 		
 	}
 	
+	//método para escribir en un fichero, que recive un arraylist de strings
 	public static void escribirFichero(ArrayList<String> listaPalabras) {
 			
 		
@@ -76,6 +76,7 @@ public class Ejercicio2 {
 		
 	}
 	
+	//método para determinar que una palabra es palíndroma.
 	public static boolean esPalindromo(String palabra) {
 		palabra = palabra.toLowerCase();
 		

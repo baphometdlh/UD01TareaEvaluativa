@@ -14,6 +14,7 @@ public class Ejercicio3 {
 		esUnZIP();
 	}
 	
+	//método para saber que el archivo es un zip o no.
 	private static void esUnZIP() {
 		File fichero = new File("." + File.separator + "src" + File.separator + 
 				"ejercicios" + File.separator + "fichero3.zip");

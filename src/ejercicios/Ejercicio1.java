@@ -3,7 +3,6 @@ package ejercicios;
 import java.io.*;
 import java.util.ArrayList;
 
-
 /*Realiza un programa en Java que lea un fichero y lo invierta. Es decir, si el fichero de 
 entrada contiene “Hola mundo”, el fichero de salida contendrá “odnum aloH”. */
 
@@ -17,6 +16,7 @@ public class Ejercicio1 {
 		escribirFichero();
 	}
 	
+	//método para leer un fichero
 	private static void leerFichero() {
 		
 		System.out.println("Primero leemos el fichero y contiene el siguiente texto: ");
@@ -54,6 +54,7 @@ public class Ejercicio1 {
 		
 	}
 	
+	//método para escribir un fichero
 	public static void escribirFichero() {
 		
 		System.out.println("despues de invertir el contenido, tenemos el siguiente texto: ");
